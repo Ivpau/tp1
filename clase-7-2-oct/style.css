@@ -1,0 +1,163 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: firebrick;
+    color: #bfbfbf;
+}
+
+/*adapto imagenes a cualquer elemento padre*/
+/*.img-fluid inventada por Bootstrap*/
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+audio {
+    width: 100%;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: .5rem;
+}
+
+header {
+    background-color: lightblue;
+    color: white;
+}
+
+.banner {
+    display: block;
+    /*se muestra*/
+}
+
+.fotorama {
+    display: none;
+    /*se oculta*/
+}
+
+#uno {
+    background-color: brown;
+}
+
+#dos {
+    background: url(img/fondo-cafe-2.jpg) no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+}
+
+.desayuno {
+    background-color: rgba(62, 35, 2, 0.79);
+}
+
+.galeria {}
+
+.galeria article {
+    padding: .2rem;
+}
+
+/*color para tres*/
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 1rem;
+}
+
+/*fin de cero px hasta 575px smart extrasmall*/
+
+/*smart standar de 576px hasta 767px*/
+@media (min-width: 576px) {
+    .container {
+        width: 540px;
+        padding: .5rem 1.125rem;
+        /*18px izq y 18px derecha. (36px izq+der) en eje-x*/
+    }
+
+    .banner {
+        display: none;
+        /*se oculta*/
+    }
+
+    .fotorama {
+        display: block;
+        /*se muestra*/
+    }
+}
+
+/*fin smart standar de 576px hasta 767px*/
+/*-----------------------------fin mundo smart-----------------------------*/
+/*tablet*/
+@media (min-width:768px) {
+    body {
+        background-color: tomato;
+    }
+
+    .container {
+        width: 720px;
+        padding: .5rem 1.5rem;
+        /*24px izq y 24px derecha. izq+der) en eje-x*/
+    }
+
+    /*css grid aplicado*/
+    .moccha {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0.625rem;
+        grid-row-gap: 0;
+    }
+
+    /*css grid para galeria*/
+    .galeria{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 0;
+        grid-row-gap: 0;
+    }
+
+}
+
+/*escritorio*/
+@media (min-width:992px) {
+    body {
+        background-color: #e64e2a;
+    }
+
+    .container {
+        width: 960px;
+        padding: .5rem 1rem;
+        /*16px izq y 16px derecha. (32px izq+der) en eje-x*/
+    }
+
+    /*css grid video tutorial*/
+    .moccha {
+       /* display: grid;*/
+        grid-template-columns: .5fr 1fr;/*variable, cambio a partir de 992px*/
+        grid-template-rows: 1fr;/*variable, cambio a partir de 992px*/
+        grid-column-gap: 1.25rem;/*variable, cambio a partir de 992px*/
+        /*grid-row-gap: 0;*/
+    }
+    /*css grid para galeria*/
+    .galeria{
+        /*display: grid;*/
+        grid-template-columns: repeat(3, 1fr);/*variable, cambio a partir de 992px*/
+        grid-template-rows: repeat(2, 1fr);/*variable, cambio a partir de 992px*/
+        /*grid-column-gap: 0;
+        grid-row-gap: 0;*/
+    }
+
+
+}

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- optimizador css para toda tag html5 y html -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!--fin optimizador css para toda tag html5 y html -->
+
+    <!--=====mundo plugin jquery sus css===============================================================-->
+    <!-- fotorama -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <!--fin fotorama -->
+
+    <!-- css cdn de fancybox (modal box) galeria -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <!--fin css cdn de fancybox (modal box) galeria -->
+
+    <!-- animación wow -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!--fin animación wow -->
+    <!-- mis css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container flex">
+            <div class="logo">
+                <h1>tu logo aqui</h1>
+                <h2>tu slogan</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#uno">uno</a></li>
+                    <li><a href="#dos">dos</a></li>
+                    <li><a href="#tres">tres</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container">
+            <audio controls>
+                <source src="multimedia/seven-days-in-sunny-june.mp3" type="audio/mp3">
+                Si no puede ver el contenido actualize su navegador
+            </audio>
+        </div>
+    </header>
+    <!-- Se ocultara a partir de 576px (smart pequeños) -->
+    <div class="banner">
+        <figure>
+            <img src="img/slider1.jpg" alt="" class="img-fluid">
+        </figure>
+    </div>
+    <!-- que nose vea desde cero a 575px (smart extra small)-->
+    <div class="fotorama" data-transition="slide" data-clicktransition="crossfade">
+        <img src="img/slider1.jpg" alt="slider 1" width="1920" height="680" title="slider 1">
+        <img src="img/slider2.jpg" alt="slider 2" width="1920" height="680" title="slider 2">
+        <img src="img/slider3.jpg" alt="slider 3" width="1920" height="680" title="slider 3">
+        <img src="img/slider4.jpg" alt="slider 4" width="1920" height="680" title="slider 4">
+    </div>
+    <main id="uno">
+        <section>
+            <div class="container">
+                <h2>Nuestra Especialidad</h2>
+                <hr>
+                
+                <article class="moccha">                    
+                        <div class="info"><!-- hijo 1 -->
+                            <h3>Cafe Moccha</h3>
+                            <h4>Paso a paso Preparación</h4>
+                            <p class="historia wow fadeInLeft">la preparacion de un buen cafe moccha, es indispensble para arracar el dia. </p>
+
+                            <p class="aroma wow fadeInRight">Ver el siguiente tutorial</p>
+                        </div>
+                        <!--sin sonido:muted
+                     autoarranque: autoplay 
+                     replay:loop -->
+                       <!-- hijo 2 -->
+                        <video controls poster="img/fondo-cafe-6.jpg" class="tutorial img-fluid">
+                            <!-- source:src+tab -->
+                            <source src="multimedia/como-hacer-un-cafe-moca.mp4" type="video/mp4">
+                            Si no puede ver el contenido actualize su navegador
+                            <!-- <source src="multimedia/como-hacer-un%20cafe-moca.ogg" type="video/webm">
+                        <source src="multimedia/como-hacer-un%20cafe-moca.webm" type="video/webm"> -->
+                        </video>                    
+                </article>
+            </div>
+        </section>
+    </main>
+    <section id="dos">
+        <div class="container desayuno">
+            <h2>Menu del dia</h2>
+
+            <figure>
+                <img src="img/slider3.jpg" alt="" class="img-fluid">
+            </figure>
+            <hr><!-- atr :P -->
+
+            <h3>Veni y llevate tu favorito</h3>
+
+            <div class="galeria">
+                <article class="wow fadeInDown" data-wow-duration=".5s" data-wow-delay=".8s">
+                    <figure>
+                        <a data-fancybox="takeaway" href="productos/cafe1.jpg" title="cafe americano" data-caption="cafe americano: Lorem ipsum dolor sit amet.">
+                            <img src="productos/cafe1-smart.jpg" alt="cafe americano" class="img-fluid" width="576" height="576">
+                        </a>
+                    </figure>
+                </article>
+                <article class="wow fadeInDown" data-wow-duration=".7s" data-wow-delay="1s">
+                    <figure>
+                        <a data-fancybox="takeaway" href="productos/cafe2.jpg" title="lagrima" data-caption="lagrima: Lorem ipsum dolor sit amet, consectetur adipisicing elit.">
+                            <img src="productos/cafe2-smart.jpg" alt="lagrima" class="img-fluid" width="576" height="576">
+                        </a>
+                    </figure>
+                </article>
+                <article class="wow fadeInDown" data-wow-duration=".9s" data-wow-delay="1.2s">
+                    <figure>
+                        <a data-fancybox="takeaway" href="productos/cafe3.jpg" title="moccha cafe" data-caption="moccha cafe: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto odit, quam esse!">
+                            <img src="productos/cafe3-smart.jpg" alt="moccha cafe" class="img-fluid" width="576" height="576">
+                        </a>
+                    </figure>
+                </article>
+            
+            <!-- fin grupo 1 de tres -->
+            <!-- grupo 2 de tres -->
+            
+                <article class="wow fadeInUp" data-wow-duration="1.1s" data-wow-delay="1.4s">
+                    <figure>
+                        <a data-fancybox="menu-septiembre" href="productos/cafe4.jpg" title="desayunos" data-caption="desayunos: Lorem ipsum dolor sit amet.">
+                            <img src="productos/cafe4-smart.jpg" alt="desayunos" class="img-fluid" width="576" height="576">
+                        </a>
+                    </figure>
+                </article>
+                <article class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.6s">
+                    <figure>
+                        <a data-fancybox="menu-septiembre" href="productos/cafe5.jpg" title="Brunch" data-caption="Brunch: Lorem ipsum dolor sit amet, consectetur adipisicing elit.">
+                            <img src="productos/cafe5-smart.jpg" alt="Brunch" class="img-fluid" width="576" height="576">
+                        </a>
+                    </figure>
+                </article>
+                <article class="wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.8s">
+                    <figure>
+                        <a data-fancybox="menu-septiembre" href="productos/cafe6.jpg" title="Cafe Expresso" data-caption="Cafe Expresso: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto odit, quam esse!">
+                            <img src="productos/cafe6-smart.jpg" alt="Cafe Expresso" class="img-fluid" width="576" height="576">
+                        </a>
+                    </figure>
+                </article>
+            </div>
+            <!--fin grupo 2 de tres -->
+
+        </div><!-- fin container desayuno -->
+    </section>
+
+    <section id="tres">
+        <div class="container">
+            <h2>tres</h2>
+            <figure>
+                <img src="img/slider4.jpg" alt="" class="img-fluid">
+            </figure>
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur sit cum ex debitis molestias ut in temporibus voluptas praesentium vel neque dolores, itaque quasi iure omnis tempora, porro nisi illum! Voluptatibus quibusdam hic, eaque libero quidem omnis inventore, ratione voluptate praesentium ipsa nisi ex, voluptatum distinctio totam magnam blanditiis debitis saepe sequi. Porro cum ex obcaecati minima maxime! Aliquam blanditiis nesciunt maxime nam repellendus, eaque distinctio magnam? Sint, <br> quos eligendi illo suscipit, repellendus, ratione ducimus neque nam vero fuga doloremque. Vel obcaecati, consequuntur odit officia suscipit, tempora ipsam quisquam optio nisi adipisci. Cumque vel impedit facilis maxime odio, eaque reprehenderit est, laborum autem magni expedita? Recusandae rerum nihil, pariatur non totam deleniti quibusdam provident itaque asperiores, ab aut, suscipit, expedita in! Error accusantium in minus expedita totam quos odio, pariatur eos sed ipsa voluptatum et. Rem ex itaque esse beatae molestiae veritatis facere asperiores illum reiciendis, dicta, distinctio optio ducimus!</p>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>coyright - 2020</p>
+        </div>
+    </footer>
+
+    <!-- lenguaje basado en javascript. librerias de jquery -->
+    <!-- 1er colocamos la librería oficial JQUERY -->
+    <!-- script:src +tab-->
+    <!-- ultima versión de jquery -->
+    <!-- cdn embebido -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- libreria jquery de carousel fotorama -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+    <!--fin libreria jquery de carousel fotorama -->
+
+    <!-- librería js de fancybox -->
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <!--fin librería js de fancybox -->
+
+    <!-- jquery de wowanimation -->
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+
+    </script>
+    <!--fin jquery de wowanimation -->
+</body>
+
+</html>
