@@ -13,14 +13,17 @@
     background-color: aqua;
     padding-top: 25px;
     justify-content: center;
+    display: grid;
 }
 #gow{
     width: 40%;
     max-width: 500px;
     height: auto;   
+    float: left;
 }
 #alice{
     width: 40%;
     max-width: 500px;
     height: auto;
+    float: left;
 }
