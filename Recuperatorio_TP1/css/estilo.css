@@ -27,3 +27,12 @@
     height: auto;
     float: left;
 }
+.pColocacion{
+    padding: 25px;
+}
+#parrafoGow{
+    text-align: center;
+}
+.card{
+    background-color: blue;
+}
