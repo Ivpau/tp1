@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title> Foppiano Zelaya, Ivana Paula. Turno Tarde, comisión: C, Maquetado y Desarrollo Web, Diseño Multimedial.</title>
+        <link rel="stylesheet" href="css/estilo.css">
+        <link rel="stylesheet" href="jss/bootstrap.js">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <header>
+            <div>
+                <img src="img/banner.png" class="imgCabecera">
+            </div>
+            <h1 id="title">
+                Mundi-reseñas
+            </h1>
+
+        </header>
+        <section class="resenas">
+
+            <h2> Secciones</h2>
+            <hr> 
+            <p><img id="imgAlice" src="img/alice2png.png" >
+                Con su mente por los suelos e incapaz de resolver el miedo impulsado por sus extraños recuerdos, sueños y visiones, Alice decide refugiarse en el País de las Maravillas para resolver mejor sus problemas, buscando lo que el mundo real no puede ofrecer: la seguridad, el conocimiento y la verdad sobre el pasado.</p>
+            <p><img id="imgGow" src="img/gow2.png" >
+                God of War es una obra maestra, en que cada aspecto individual del juego se combina para completar una aventura violenta, conmovedora e inolvidable, cuya ambientación nórdica nos ha conquistado. En la historia se ven las pistas y el mismo jugador los verá pero su verdadera historia los descubre con el tiempo.</p>
+        </section>
+        <section id="trailers">
+            <h3> Trailers de los juegos</h3>
+
+            <iframe id="videoAlice" width="420" height="315" src="https://www.youtube.com/embed/D1X1C333nN8"></iframe>
+            <iframe id="videoGow" widht="800" height="300" src="https://www.youtube.com/embed/AN3jEjjcZ-k"></iframe>
+        </section>
+
+        <section id="galeria">
+
+            <div class="imgGA">
+                <h4>
+                    Galeria de imágenes
+                </h4>
+                <hr>
+
+                <img id="myImg1" src="img/alice_intervalo.jpg" class="intervalo">
+                <img id="myImg2" src="img/alice_locura.jpg" class="locura">
+                <img id="myImg3" src="img/god_family.jpg" class="family">
+                <img id="myImg4" src="img/god_mimir.jfif" class="mimir">
+            </div>
+        </section>
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+        <section id="presentacion">
+            <div >
+                <div>
+                    <h4>Presentación</h4>
+                </div>
+                <hr>
+                <div>
+
+                    <p>
+                        Hola, soy Kurivi (Nombre real: Ivana Paula Foppiano Zelaya) soy estudiante de la carrera Diseño Multimedial, en estos momentos me dedico a hacer streams y a hacer reseñas de ciertos juegos que me gustan. ¿Por qué hago streams? Simplemente por gustos, además de poder conocer nuevas personas virtualmente. 
+                    </p>
+
+                </div>
+            </div>
+        </section>
+
+        <footer id="footer">
+            <div id="redes">
+                <img id="facebook" src="img/facebook.png">
+                <img id="twitter" src="img/twitter.png">
+                <img id="ig" src="img/instagram.png">
+            </div>
+            <div>
+                © Ivana Paula Foppiano Zelaya, Turno Tarde, comisión: C, Maquetado y Desarrollo Web, Diseño Multimedial.
+            </div>
+        </footer>
+        <script>
+
+            var modal = document.getElementById("myModal");
+
+            var img = document.getElementById("myImg1");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+            var img = document.getElementById("myImg2");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+            var img = document.getElementById("myImg3");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+            var img = document.getElementById("myImg4");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+
+
+
+            var span = document.getElementsByClassName("close")[0];
+
+
+            span.onclick = function() { 
+                modal.style.display = "none";
+            }
+        </script>
+    </body>
+
+</html>
