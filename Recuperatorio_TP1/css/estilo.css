@@ -2,6 +2,10 @@
     text-align: center;
     background-color: antiquewhite;
 }
+
+#body{
+    background-color: antiquewhite;
+}
 .imgCabecera{
     justify-content: center;
     background-color: burlywood;
@@ -10,7 +14,6 @@
 
 }
 .resenas{
-    background-color: aqua;
     padding-top: 25px;
     justify-content: center;
     text-align: center;
@@ -18,9 +21,11 @@
 }
 #gow{
     height: auto;
+   align-items: center;
 }
 #alice{
     height: auto;
+   align-items: centerM
 }
 
 .card {
