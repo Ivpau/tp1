@@ -3,6 +3,7 @@
 }
 body{
     background-color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .imgCabecera{
     justify-content: center;
@@ -10,40 +11,45 @@ body{
     width: 100%;   
 }
 .resenas{
-    padding-top: 25px;
+    padding-top: 1.563rem;
     justify-content: center;
     text-align: center;
-    max-width: 800px;
+    max-width: 50rem;
     width: 100%;
     display: grid;
     margin: 0 auto;
-    border-style: double;
-    border-radius: 25px;
-    border: 1px solid #D7D7D7;
-    padding: 3px;
-    background-color: rgba(226, 224,244, 0.5);
+    padding: 0.188rem;
 
 }
+
+#marginTrailer{
+    margin-top: 1.563rem;
+}
 #imgAlice {
+    display: block;
+    border-radius: 0.313rem;
     float: left;
-    width:170px;
-    height:170px;
-    margin-left:15px;
+    width:100%;
+    height:10.625rem;
+    margin-left:0.938rem;
+    max-width: 10.625rem;
 }
 #imgGow {
+
+    border-radius: 0.313rem;
     float: left;
-    width:170px;
-    height:170px;
-    margin-left:15px;
+    width:10.625rem;
+    height:10.625rem;
+    margin-left:0.938rem;
 }
 hr{
     width: 100%;
-    height: 1px;
+    height: 0.063rem;
 }
 #trailers{
     margin: 0 auto;
     display: grid;
-    max-width: 800px;
+    max-width: 50rem;
     width: 100%;
 }
 h3{
@@ -67,27 +73,28 @@ h3{
 }
 h2{
     text-align: center;
-    text-shadow: black 0px 0 2px; 
+    text-shadow: black 0rem 0 0.125rem; 
 }
 .galeria{
-    max-width: 800px;
+    max-width: 50rem;
     width: 100%;
     margin: 0 auto;
     display: grid;
     background-size: cover;
     -webkit-background-size: cover;
 }
-
-@media (min-width: 576px) {
+@media (min-width: 36rem) {
     .container {
-        width: 540px;
+        width: 33.75rem;
         padding: .5rem 1.125rem;
     }
 }
-
-@media (min-width:768px) {
+#me{
+    text-decoration: overline;
+}
+@media (min-width: 48rem) {
     .container {
-        width: 720px;
+        width: 45rem;
         padding: .5rem 1.5rem;
     }
     .galeria{
@@ -98,10 +105,17 @@ h2{
         grid-row-gap: 0;
     }
 }
-
-@media (min-width:992px) {
+.me_Ivana{
+    padding-top: 0.313rem;
+    padding-bottom: 0.313rem;
+    padding-left: 0.313rem;
+    padding-right: 0.313rem;
+    background-color: rgba(226, 224, 224, 0.5);
+    border-radius: 0.313REM;
+}
+@media (min-width: 62rem) {
     .container {
-        width: 960px;
+        width: 60rem;
         padding: .5rem 1rem;
     }
     .galeria{
@@ -111,80 +125,66 @@ h2{
 }
 .imgGA{
     text-align: center;
-    max-width: 800px;
+    max-width: 50rem;
     justify-content: center;
     width: 100%;
     margin: 0 auto;
 }
 .imgGaleria{
-    width: 300px;
+    width: 18.75rem;
     margin: 0 auto;
 }
 #presentacion{
-    max-width: 800px;
+    max-width: 50rem;
     width: 100%;
     margin: 0 auto;
     display: grid;
 }
 footer{
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 0.938rem;
+    padding-bottom: 0.938rem;
     margin: 0 auto;
     text-align: center;
     background-color: burlywood;
 }
 .contFooter{
-    max-width: 800px;
+    max-width: 50rem;
     width: 100%;
 }
-#facebook{
-    margin: 20px;
-    justify-content: center;
-}
-#twitter{
-    width: 50px;
-    height: 50px;
-    margin: 20px;
-}
-#ig{
-    width: 65px;
-    height: 65px;
-    margin: 20px;
-}
+
 .intervalo{
-    width: 300px;
+    width: 18.75rem;
     margin: 0 auto; 
 }
 .locura{
-    width: 300px;
+    width: 18.75rem;
     margin: 0 auto;
 }
 .family{
-    width: 300px;
+    width: 18.75rem;
     margin: 0 auto;
 }
 .mimir{
-    width: 300px;
+    width: 18.75rem;
     margin: 0 auto;
 }
-#myImg1:hover {
-    opacity: 0.7;
+#myImg1{
+    border-radius: 0.313rem;
 }
-#myImg2:hover {
-    opacity: 0.7;
+#myImg2{
+    border-radius: 0.313rem;
 }
-#myImg3:hover {
-    opacity: 0.7;
+#myImg3{
+    border-radius: 0.313rem;
 }
-#myImg4:hover {
-    opacity: 0.7;
+#myImg4{
+    border-radius: 0.313rem;
 }
-
 .modal {
     display: none;
     position: fixed;
     z-index: 1;
-    padding-top: 100px;
+    padding-top: 6.25rem;
     left: 0;
     top: 0;
     width: 100%;
@@ -197,61 +197,51 @@ footer{
     width: 100%;
     margin: 0 auto;
 }
-
 .modal-content {
     margin: auto;
     display: block;
     width: 80%;
-    max-width: 700px;
+    max-width: 43.75rem;
 }
-
-
 #caption {
     margin: auto;
     display: block;
     width: 80%;
-    max-width: 700px;
+    max-width: 43.75rem;
     text-align: center;
     color: #ccc;
-    padding: 10px 0;
-    height: 150px;
+    padding: 0.625rem 0;
+    height: 9.375rem;
 }
-
 .modal-content, #caption {
     -webkit-animation-name: zoom;
     -webkit-animation-duration: 0.6s;
     animation-name: zoom;
     animation-duration: 0.6s;
 }
-
 @-webkit-keyframes zoom {
     from {-webkit-transform:scale(0)} 
     to {-webkit-transform:scale(1)}
 }
-
 @keyframes zoom {
     from {transform:scale(0)} 
     to {transform:scale(1)}
 }
-
 .close {
-
-    top: 15px;
-    right: 35px;
+    top: 0.938rem;
+    right: 2.188rem;
     color: black;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: bold;
     transition: 0.3s;
 }
-
 .close:hover,
 .close:focus {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
 }
-
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 43.75rem){
     .modal-content {
         width: 100%;
     }

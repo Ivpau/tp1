@@ -15,137 +15,113 @@
             <h1 id="title">
                 Mundi-reseñas
             </h1>
-
         </header>
         <section class="resenas">
-
+            <hr>
             <h2> Secciones</h2>
-            <hr> 
-            <p><img id="imgAlice" src="img/alice2png.png" >
+            <p><img id="imgAlice" src="img/alice2png.png" width="576" height="576">
                 Con su mente por los suelos e incapaz de resolver el miedo impulsado por sus extraños recuerdos, sueños y visiones, Alice decide refugiarse en el País de las Maravillas para resolver mejor sus problemas, buscando lo que el mundo real no puede ofrecer: la seguridad, el conocimiento y la verdad sobre el pasado.</p>
-            <p><img id="imgGow" src="img/gow2.png" >
+            <p><img id="imgGow" src="img/gow2.png" width="576" height="576">
                 God of War es una obra maestra, en que cada aspecto individual del juego se combina para completar una aventura violenta, conmovedora e inolvidable, cuya ambientación nórdica nos ha conquistado. En la historia se ven las pistas y el mismo jugador los verá pero su verdadera historia los descubre con el tiempo.</p>
         </section>
-        <!---------->        
-        <section id="trailers">
-            <h2> Trailers de los juegos</h2>
-
-            <iframe id="videoAlice" src="https://www.youtube.com/embed/D1X1C333nN8" class="img-fluid-alice"></iframe>
-            <iframe id="videoGow" src="https://www.youtube.com/embed/AN3jEjjcZ-k" class="img-fluid-gow"></iframe>
-        </section>
-        
-        <section id="container">
-            <h2>Galeria</h2>
-            <div class="galeria">
-                <article>
-                    <figure>
-                        <img id="myImg1" src="img/alice_intervalo.jpg" class="img-fluid-alice" width="500" height="500">
-                    </figure>
-                </article>
-                <article>
-                    <figure>
-                        <img id="myImg2" src="img/alice_locura.jpg" class="img-fluid-alice" width="500" height="500">
-                    </figure>
-                </article>
-                <article>
-                    <figure>
-                        <img id="myImg3" src="img/god_mimir.jfif" class="img-fluid-alice" width="500" height="500">
-                    </figure>
-                </article>
-                <article>
-                    <figure>
-                        <img id="myImg4" src="img/god_family.jpg" class="img-fluid-alice" width="500" height="500">
-                    </figure>
-                </article>
-            </div>
-        </section>
-        <div id="myModal" class="modal">
-            <span class="close">&times;</span>
-            <img class="modal-content" id="img01">
-            <div id="caption"></div>
-        </div>
-        <section id="presentacion">
-            <div >
-                <div>
-                    <h2>Presentación</h2>
-                </div>
-                <hr>
-                <div>
-
-                    <p>
-                        Hola, soy Kurivi (Nombre real: Ivana Paula Foppiano Zelaya) soy estudiante de la carrera Diseño Multimedial, en estos momentos me dedico a hacer streams y a hacer reseñas de ciertos juegos que me gustan. ¿Por qué hago streams? Simplemente por gustos, además de poder conocer nuevas personas virtualmente. 
-                    </p>
-
-                </div>
-            </div>
-        </section>
-        <!-------------------->
-        <footer>
-            <!--div class="contFooter">
-                <div id="redes">
-                    <img width="20" height="20" class="img-fluid-alice" src="img/facebook.png">
-                    <img width="20" height="20" class="img-fluid-alice" src="img/twitter.png">
-                    <img width="20" height="20" class="img-fluid-alice" src="img/instagram.png">
-                </div>
-                <div>
-                    © Ivana Paula Foppiano Zelaya, Turno Tarde, comisión: C, Maquetado y Desarrollo Web, Diseño Multimedial.
-                </div>
-            </div-->
-            <div class="redes">
+    <section id="trailers">
+        <hr>
+        <h2> Trailers de los juegos</h2>
+        <iframe id="videoAlice" src="https://www.youtube.com/embed/D1X1C333nN8" class="img-fluid-alice"></iframe>
+        <iframe id="videoGow" src="https://www.youtube.com/embed/AN3jEjjcZ-k" class="img-fluid-gow"></iframe>
+        <hr id="marginTrailer">
+    </section>
+    <section id="container">
+        <h2>Galeria</h2>
+        <div class="galeria">
+            <article>
                 <figure>
-                    <img width="20" height="20" class="img-fluid-alice" src="img/facebook.png">
-                    <img width="20" height="20" class="img-fluid-alice" src="img/twitter.png">
-                    <img width="20" height="20" class="img-fluid-alice" src="img/instagram.png">
+                    <img id="myImg1" src="img/alice_intervalo.jpg" title="Alice en el país de las maravillas" class="img-fluid-alice" width="500" height="500">
                 </figure>
-                <p>© Ivana Paula Foppiano Zelaya, Turno Tarde, comisión: C, Maquetado y Desarrollo Web, Diseño Multimedial.</p>
+            </article>
+            <article>
+                <figure>
+                    <img id="myImg2" src="img/alice_locura.jpg" title="Alice en la fase de la Locura" class="img-fluid-alice" width="500" height="500">
+                </figure>
+            </article>
+            <article>
+                <figure>
+                    <img id="myImg3" src="img/god_mimir.jfif" title="Conociendo a Mimir" class="img-fluid-alice" width="500" height="500">
+                </figure>
+            </article>
+            <article>
+                <figure>
+                    <img id="myImg4" src="img/god_family.jpg" title="La familia" class="img-fluid-alice" width="500" height="500">
+                </figure>
+            </article>
+        </div>
+    </section>
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+    <section id="presentacion">
+        <div >
+            <div>
+                <h2 id="me">Presentación</h2>
             </div>
-        </footer>
-        <script>
-
-            var modal = document.getElementById("myModal");
-
-            var img = document.getElementById("myImg1");
-            var modalImg = document.getElementById("img01");
-            var captionText = document.getElementById("caption");
-            img.onclick = function(){
-                modal.style.display = "block";
-                modalImg.src = this.src;
-                captionText.innerHTML = this.alt;
-            }
-            var img = document.getElementById("myImg2");
-            var modalImg = document.getElementById("img01");
-            var captionText = document.getElementById("caption");
-            img.onclick = function(){
-                modal.style.display = "block";
-                modalImg.src = this.src;
-                captionText.innerHTML = this.alt;
-            }
-            var img = document.getElementById("myImg3");
-            var modalImg = document.getElementById("img01");
-            var captionText = document.getElementById("caption");
-            img.onclick = function(){
-                modal.style.display = "block";
-                modalImg.src = this.src;
-                captionText.innerHTML = this.alt;
-            }
-            var img = document.getElementById("myImg4");
-            var modalImg = document.getElementById("img01");
-            var captionText = document.getElementById("caption");
-            img.onclick = function(){
-                modal.style.display = "block";
-                modalImg.src = this.src;
-                captionText.innerHTML = this.alt;
-            }
-
-
-
-            var span = document.getElementsByClassName("close")[0];
-
-
-            span.onclick = function() { 
-                modal.style.display = "none";
-            }
-        </script>
+            <hr>
+            <div class="me_Ivana">
+                <p>
+                    Hola, soy Kurivi (Nombre real: Ivana Paula Foppiano Zelaya) soy estudiante de la carrera Diseño Multimedial, en estos momentos me dedico a hacer streams y a hacer reseñas de ciertos juegos que me gustan. ¿Por qué hago streams? Simplemente por gusto propio, además de poder conocer nuevas personas virtualmente. 
+                </p>
+            </div>
+        </div>
+    </section>
+      <footer>
+        <div class="redes">
+            <figure>
+                <img width="40" height="40" class="img-fluid-alice" src="img/facebook.png">
+                <img width="40" height="40" class="img-fluid-alice" src="img/twitter.png">
+                <img width="40" height="40" class="img-fluid-alice" src="img/instagram.png">
+            </figure>
+            <p>© Ivana Paula Foppiano Zelaya, Turno Tarde, comisión: C, Maquetado y Desarrollo Web, Diseño Multimedial.</p>
+        </div>
+    </footer>
+    <script>
+        var modal = document.getElementById("myModal");
+        var img = document.getElementById("myImg1");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+        var img = document.getElementById("myImg2");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+        var img = document.getElementById("myImg3");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+        var img = document.getElementById("myImg4");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+        var span = document.getElementsByClassName("close")[0];
+        span.onclick = function() { 
+            modal.style.display = "none";
+        }
+    </script>
     </body>
-
 </html>
