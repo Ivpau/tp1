@@ -2,6 +2,7 @@
 <html lang="es">
     <head>
         <title> Foppiano Zelaya, Ivana Paula. Turno Tarde, comisión: C, Maquetado y Desarrollo Web, Diseño Multimedial.</title>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <link rel="stylesheet" href="css/estilo.css">
         <link rel="stylesheet" href="jss/bootstrap.js">
         <meta charset="UTF-8">
@@ -28,22 +29,41 @@
         <section id="trailers">
             <h3> Trailers de los juegos</h3>
 
-            <iframe id="videoAlice" width="420" height="315" src="https://www.youtube.com/embed/D1X1C333nN8"></iframe>
-            <iframe id="videoGow" widht="800" height="300" src="https://www.youtube.com/embed/AN3jEjjcZ-k"></iframe>
+            <iframe id="videoAlice" src="https://www.youtube.com/embed/D1X1C333nN8" class="img-fluid-alice"></iframe>
+            <iframe id="videoGow" src="https://www.youtube.com/embed/AN3jEjjcZ-k" class="img-fluid-gow"></iframe>
         </section>
 
         <section id="galeria">
-
-            <div class="imgGA">
-                <h4>
-                    Galeria de imágenes
-                </h4>
-                <hr>
-
-                <img id="myImg1" src="img/alice_intervalo.jpg" class="intervalo">
-                <img id="myImg2" src="img/alice_locura.jpg" class="locura">
-                <img id="myImg3" src="img/god_family.jpg" class="family">
-                <img id="myImg4" src="img/god_mimir.jfif" class="mimir">
+            <div class="galeria">
+                <article class="wow fadeInDown" data-wow-duration=".5s" data-wow-delay=".8s">
+                    <figure>
+                        <a data-fancybox="takeaway" href="img/god_mimir.jfif" title="cafe americano" data-caption="cafe americano: Lorem ipsum dolor sit amet.">
+                            <img src="img/god_mimir.jfif" alt="cafe americano" class="img-fluid-alice" width="576" height="576">
+                        </a>
+                    </figure>
+                </article>
+                <article class="wow fadeInDown" data-wow-duration=".7s" data-wow-delay="1s">
+                    <figure>
+                        <a data-fancybox="takeaway" href="img/god_mimir.jfif" title="lagrima" data-caption="lagrima: Lorem ipsum dolor sit amet, consectetur adipisicing elit.">
+                            <img src="img/god_mimir.jfif" alt="lagrima" class="img-fluid-alice" width="576" height="576">
+                        </a>
+                    </figure>
+                </article>
+            
+                <article class="wow fadeInUp" data-wow-duration="1.1s" data-wow-delay="1.4s">
+                    <figure>
+                        <a data-fancybox="menu-septiembre" href="img/god_mimir.jfif" title="desayunos" data-caption="desayunos: Lorem ipsum dolor sit amet.">
+                            <img src="img/god_mimir.jfif" alt="desayunos" class="img-fluid-alice" width="576" height="576">
+                        </a>
+                    </figure>
+                </article>
+                <article class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.6s">
+                    <figure>
+                        <a data-fancybox="menu-septiembre" href="img/god_mimir.jfif" title="Brunch" data-caption="Brunch: Lorem ipsum dolor sit amet, consectetur adipisicing elit.">
+                            <img src="img/god_mimir.jfif" alt="Brunch" class="img-fluid-alice" width="576" height="576">
+                        </a>
+                    </figure>
+                </article>
             </div>
         </section>
         <div id="myModal" class="modal">
