@@ -67,6 +67,7 @@ h3{
 }
 h4{
     text-align: center;
+    text-shadow: black 0px 0 2px; 
 }
 .galeria{
     max-width: 800px;
@@ -166,7 +167,7 @@ h4{
     margin: 0 auto;
 }
 
-#myImg {
+#myImg1 {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
@@ -192,7 +193,6 @@ h4{
 }
 #myModal{
     width: 100%;
-    max-width: 800px;
     margin: 0 auto;
 }
 
