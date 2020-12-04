@@ -1,0 +1,26 @@
+#title{
+    text-align: center;
+    background-color: antiquewhite;
+}
+.imgCabecera{
+    justify-content: center;
+    background-color: burlywood;
+    width: 100%;
+    margin: 0 auto;
+
+}
+.resenas{
+    background-color: aqua;
+    padding-top: 25px;
+    justify-content: center;
+}
+#gow{
+    width: 40%;
+    max-width: 500px;
+    height: auto;   
+}
+#alice{
+    width: 40%;
+    max-width: 500px;
+    height: auto;
+}
