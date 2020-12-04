@@ -126,18 +126,19 @@ h2{
     margin: 0 auto;
     display: grid;
 }
-#footer{
+footer{
+    padding-top: 15px;
+    padding-bottom: 15px;
     margin: 0 auto;
     text-align: center;
     background-color: burlywood;
-    padding: 50px;
-    display: grid;
 }
-
+.contFooter{
+    max-width: 800px;
+    width: 100%;
+}
 #facebook{
     margin: 20px;
-    width: 50px;
-    height: 50px;
     justify-content: center;
 }
 #twitter{
@@ -166,17 +167,18 @@ h2{
     width: 300px;
     margin: 0 auto;
 }
-
-#myImg1 {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
+#myImg1:hover {
+    opacity: 0.7;
 }
-
-#myImg1:hover {opacity: 0.7;}
-#myImg2:hover {opacity: 0.7;}
-#myImg3:hover {opacity: 0.7;}
-#myImg4:hover {opacity: 0.7;}
+#myImg2:hover {
+    opacity: 0.7;
+}
+#myImg3:hover {
+    opacity: 0.7;
+}
+#myImg4:hover {
+    opacity: 0.7;
+}
 
 .modal {
     display: none;
